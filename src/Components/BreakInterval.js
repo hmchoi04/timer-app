@@ -1,13 +1,24 @@
 import React from 'react';
 
 function BreakInterval(props) {
+    function decreaseCounter() {
+        if (props.breakInterval === 1) {
+            return; 
+        }
+
+    }
+    function increaseCounter() {
+        if(props.breakInterval === 60) {
+            return;
+        }
+    }
     return (
         <section>
             <h4>Break Length</h4>
             <section className="interval-container">
-                <button>Down</button>
+                <button onClick={decreaseCounter}>Down</button>
                 <p className = "interval-length">{props.breakInterval}</p>
-                <button>Up</button>
+                <button onClick={increaseCounter}>Up</button>
             </section>
         </section>
 
