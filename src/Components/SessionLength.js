@@ -3,9 +3,12 @@ import React from 'react';
 function SessionLength(props) {
     return (
         <section>
-            <button>Down</button>
-            <p>{props.sessionLength}</p>
-            <button>Up</button>
+            <h4>Session Length</h4>
+            <section>
+                <button>Down</button>
+                <p className="interval-length">{props.sessionLength}</p>
+                <button>Up</button>
+            </section>
         </section>
     )
 }

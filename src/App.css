@@ -15,8 +15,25 @@ h2 {
 .interval-container{
   display: flex;
   margin: 0 20px;
+  align-items: center;
 }
 
 .interval-lenght-container{
   display: flex;
+}
+
+button {
+  padding: 5px 12px; 
+  margin: 0 10px; 
+  height: 25px; 
+  background-color: #263646;
+  border: none;
+  outline: none; 
+  cursor: pointer; 
+  color: #eee
+}
+
+.interval-length {
+  font-size: 2rem; 
+  margin: 0 10px;
 }
